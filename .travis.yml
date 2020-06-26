@@ -2,8 +2,11 @@ language: python
 python:
   - "3.8"
 
+env:
+  -DJANGO_VERSION=3.0.1
+
 install:
-  - pipenv shell
+  - pip install -r requirements.txt
 
 script:
   - python manage.py test
