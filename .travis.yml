@@ -1,16 +1,16 @@
-language: python
-python:
-  - "3.8"
+# language: python
+# python:
+#   - "3.8"
 
-env:
-  -DJANGO_VERSION=3.0.1
+# env:
+#   -DJANGO_VERSION=3.0.1
 
-install:
-  - pip install pipenv pytest
-  - pipenv --python 3
-  - pipenv install
-  - pipenv install django==3.0.1
-  - pipenv shell
+# install:
+#   - pip install pipenv pytest
+#   - pipenv --python 3
+#   - pipenv install
+#   - pipenv install django==3.0.1
+#   - pipenv shell
 
-script:
-  - python manage.py test
+# script:
+#   - python manage.py test
