@@ -6,6 +6,9 @@ env:
   -DJANGO_VERSION=3.0.1
 
 install:
+  - pip install pipenv pytest
+  - pipenv --python 3
+  - pipenv install
   - pipenv install django==3.0.1
   - pipenv shell
 
